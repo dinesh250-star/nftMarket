@@ -1,0 +1,40 @@
+:root {
+  --gradient: linear-gradient(90deg, #6c1e6d, #6eb6c3, #6c1e6d);
+}
+body {
+  background-image: var(--gradient);
+  animation: bg-animation 2s infinite;
+}
+.grad {
+  background-image: linear-gradient(to right, #6c1e6d, #6eb6c3);
+  background-position: left;
+  transition: background-position 350ms;
+  animation: bg-animation 5s infinite;
+}
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+.grad:hover {
+  background-position: right;
+}
+.hi {
+  position: absolute;
+  left: 45%;
+  top: 1%;
+}
+.below {
+  position: absolute;
+  left: 45%;
+  top: 1%;
+}
+.di {
+  color: white;
+}
